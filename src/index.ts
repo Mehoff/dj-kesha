@@ -1,6 +1,7 @@
-let a :number = 5;
-let b :number = Math.floor(Math.random() * 5);
+import dotenv from "dotenv";
+dotenv.config();
 
-console.log(`The number is: ${a+b}`);
+import { Bot } from "./bot/Bot";
 
-
+const bot = new Bot();
+bot.init();
